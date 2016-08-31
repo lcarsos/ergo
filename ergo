@@ -1,6 +1,7 @@
 // vim: set ft=xkb noet :
 partial alphanumeric_keys modifier_keys keypad_keys
 xkb_symbols "basic" {
+	include "us(dvorak)"
 
 	// Alphanumeric-keys
 	// ===============
