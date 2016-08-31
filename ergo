@@ -1,7 +1,6 @@
 // vim: set ft=xkb noet :
 partial alphanumeric_keys modifier_keys keypad_keys
 xkb_symbols "basic" {
-	include "us(dvorak)"
 
 	// Alphanumeric-keys
 	// ===============
@@ -14,54 +13,54 @@ xkb_symbols "basic" {
 	key.type[Group1] = "FOUR_LEVEL_SEMIALPHABETIC";
 	key <AD01> {
 		[ apostrophe,              quotedbl,                deadacute,               Greek_xi                ],
-		[ Prior,                   NoSymbol                  ]
+		[ apostrophe,              quotedbl                  ]
 	};
 	key <AD02> {
 		[ comma,                   less,                    underscore,              NoSymbol                ],
-		[ BackSpace,               NoSymbol                  ]
+		[ comma,                   less                      ]
 	};
 	key <AD03> {
 		[ period,                  greater,                 bracketleft,             Greek_lambda            ],
-		[ Up,                      Up                        ]
+		[ period,                  greater                   ]
 	};
 	key <AD04> {
 		[ p,                       P,                       bracketright,            Greek_chi               ],
-		[ Delete,                  NoSymbol                  ]
+		[ dollar,                  dollar                    ]
 	};
 	key <AD05> {
 		[ y,                       Y,                       asciicircum,             Greek_omega             ],
-		[ Next,                    NoSymbol                  ]
+		[ percent,                 percent                   ]
 	};
 
 	key <AD06> {
 		[ f,                       F,                       exclam,                  Greek_kappa             ],
-		[ NoSymbol,                NoSymbol                  ]
+		[ asterisk,                asterisk                  ]
 	};
 	key <AD07> {
 		[ g,                       G,                       less,                    Greek_psi               ],
-		[ 7,                       NoSymbol                  ]
+		[ 7,                       7                         ]
 	};
 	key <AD08> {
 		[ c,                       C,                       greater,                 Greek_gamma             ],
-		[ 8,                       NoSymbol                  ]
+		[ 8,                       8                         ]
 	};
 	key <AD09> {
 		[ r,                       R,                       equal,                   Greek_phi               ],
-		[ 9,                       NoSymbol                  ]
+		[ 9,                       9                         ]
 	};
 	key <AD10> {
 		[ l,                       L,                       ampersand,               U03D5                   ],
-		[ NoSymbol,                NoSymbol                  ]
+		[ backslash,               backslash                 ]
 	};
 
 	key.type[Group1] = "FOUR_LEVEL";
 	key <AD11> {
 		[ slash,                   question,                U017F,                   Greek_finalsmallsigma   ],
-		[ NoSymbol,                NoSymbol                  ]
+		[ asciitilde,              asciitilde                ]
 	};
 	key <AD12> {
 		[ equal,                   plus,                    dead_stroke,             dead_psili              ],
-		[ NoSymbol,                NoSymbol                  ]
+		[ grave,                   grave                     ]
 	};
 
 	// Middle row
@@ -70,50 +69,54 @@ xkb_symbols "basic" {
 		type[Group1] = "ONE_LEVEL",
 		symbols[Group1] = [ Tab ],
 		type[Group2] = "ONE_LEVEL",
-		symbols[Group2] = [ Multi_key ]
+		symbols[Group2] = [ Tab ]
 	};
 
 	key.type[Group1] = "FOUR_LEVEL_SEMIALPHABETIC";
 	key <AC01> {
 		[ a,                       A,                       slash,                   NoSymbol                ],
-		[ Home,                    NoSymbol                  ]
+		[ parenleft,               parenleft                 ]
 	};
 	key <AC02> {
 		[ o,                       O,                       minus,                   Greek_iota              ],
-		[ Left,                    Left                      ]
+		[ parenright,              parenright                ]
 	};
 	key <AC03> {
 		[ e,                       E,                       braceleft,               Greek_alpha             ],
-		[ Down,                    Down                      ]
+		[ braceleft,               braceleft                 ]
 	};
 	key <AC04> {
 		[ u,                       U,                       braceright,              Greek_epsilon           ],
-		[ Right,                   Right                     ]
+		[ braceright,              braceright                ]
 	};
 	key <AC05> {
 		[ i,                       I,                       asterisk,                Greek_omicron           ],
-		[ End,                     NoSymbol                  ]
+		[ numbersign,              numbersign                ]
 	};
 
 	key <AC06> {
 		[ d,                       D,                       question,                Greek_sigma             ],
-		[ period,                  NoSymbol                  ]
+		[ ampersand,               ampersand                 ]
 	};
 	key <AC07> {
 		[ h,                       H,                       parenleft,               Greek_nu                ],
-		[ 4,                       NoSymbol                  ]
+		[ 4,                       4                         ]
 	};
 	key <AC08> {
 		[ t,                       T,                       parenright,              Greek_rho               ],
-		[ 5,                       NoSymbol                  ]
+		[ 5,                       5                         ]
 	};
 	key <AC09> {
 		[ n,                       N,                       apostrophe,              Greek_tau               ],
-		[ 6,                       NoSymbol                  ]
+		[ 6,                       6                         ]
 	};
 	key <AC10> {
 		[ s,                       S,                       colon,                   Greek_delta             ],
-		[ Escape,                  NoSymbol                  ]
+		[ plus,                    plus                      ]
+	};
+	key <AC11> {
+		[ minus,                   underscore,              colon,                   Greek_delta             ],
+		[ bar,                     bar                       ]
 	};
 
 	key <FK13> {
@@ -129,43 +132,43 @@ xkb_symbols "basic" {
 	key.type[Group1] = "FOUR_LEVEL_SEMIALPHABETIC";
 	key <AB01> {
 		[ semicolon,               colon,                   numbersign,              NoSymbol                ],
-		[ comma,                   NoSymbol                  ]
+		[ semicolon,               colon                     ]
 	};
 	key <AB02> {
 		[ q,                       Q,                       dollar,                  U03F5                   ],
-		[ NoSymbol,                NoSymbol                  ]
+		[ at,                      at                        ]
 	};
 	key <AB03> {
 		[ j,                       J,                       bar,                     Greek_eta               ],
-		[ bracketleft,             NoSymbol                  ]
+		[ bracketleft,             bracketleft               ]
 	};
 	key <AB04> {
 		[ k,                       K,                       asciitilde,              Greek_pi                ],
-		[ bracketright,            NoSymbol                  ]
+		[ bracketright,            bracketright              ]
 	};
 	key <AB05> {
 		[ x,                       X,                       grave,                   Greek_zeta              ],
-		[ NoSymbol,                NoSymbol                  ]
+		[ exclam,                  exclam                    ]
 	};
 	key <AB06> {
 		[ b,                       B,                       plus,                    Greek_beta              ],
-		[ 0,                       NoSymbol                  ]
+		[ 0,                       0                         ]
 	};
 	key <AB07> {
 		[ m,                       M,                       percent,                 Greek_mu                ],
-		[ 1,                       NoSymbol                  ]
+		[ 1,                       1                         ]
 	};
 	key <AB08> {
 		[ w,                       W,                       backslash,               Greek_beta              ],
-		[ 2,                       NoSymbol                  ]
+		[ 2,                       2                         ]
 	};
 	key <AB09> {
 		[ v,                       V,                       at,                      Greek_mu                ],
-		[ 3,                       NoSymbol                  ]
+		[ 3,                       3                         ]
 	};
 	key <AB10> {
 		[ z,                       Z,                       at,                      NoSymbol                ],
-		[ 3,                       NoSymbol                  ]
+		[ asciicircum,             asciicircum               ]
 	};
 //	key <AB10> {
 //		type[Group1] = "ONE_LEVEL",
