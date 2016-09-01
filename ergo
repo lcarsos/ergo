@@ -1,6 +1,15 @@
 // vim: set ft=xkb noet :
-partial alphanumeric_keys modifier_keys keypad_keys
-xkb_symbols "basic" {
+
+//xkb_keymap {
+//	xkb_keycodes { include "evdev+aliases(qwerty)" };
+//	xkb_types    { include "complete" };
+//	xkb_compat   { include "complete" };
+//	xkb_symbols  { include "pc+inet(evdev)+ergo+compose(menu)" };
+//	xkb_geometry { include "pc(pc105)" };
+//};
+
+partial alphanumeric_keys modifier_keys function_keys
+xkb_symbols "ergo" {
 	include "us(dvorak)"
 
 	// Alphanumeric-keys
@@ -170,12 +179,6 @@ xkb_symbols "basic" {
 	key <AB10> {
 		[ z,                       Z,                       at,                      NoSymbol                ],
 		[ asciicircum,             asciicircum               ]
-	};
-	key <COMP> {
-		type[Group1] = "ONE_LEVEL",
-		symbols[Group1] = [ Mode_switch ],
-		type[Group2] = "ONE_LEVEL",
-		symbols[Group2] = [ Mode_switch ]
 	};
 	key <FK13> {
 		type[Group1] = "ONE_LEVEL",
