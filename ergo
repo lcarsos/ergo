@@ -120,12 +120,12 @@ xkb_symbols "basic" {
 		[ bar,                     bar                       ]
 	};
 
-	key <FK13> {
-		type[Group1] = "ONE_LEVEL",
-		symbols[Group1] = [ ISO_Level3_Shift ],
-		type[Group2] = "ONE_LEVEL",
-		symbols[Group2] = [ ISO_Level3_Shift ]
-	};
+//	key <FK13> {
+//		type[Group1] = "ONE_LEVEL",
+//		symbols[Group1] = [ ISO_Level3_Shift ],
+//		type[Group2] = "ONE_LEVEL",
+//		symbols[Group2] = [ ISO_Level3_Shift ]
+//	};
 	modifier_map Mod5   { ISO_Level3_Shift };
 
 	// Bottom row
@@ -171,12 +171,18 @@ xkb_symbols "basic" {
 		[ z,                       Z,                       at,                      NoSymbol                ],
 		[ asciicircum,             asciicircum               ]
 	};
-//	key <AB10> {
-//		type[Group1] = "ONE_LEVEL",
-//		symbols[Group1] = [ Mode_switch ],
-//		type[Group2] = "ONE_LEVEL",
-//		symbols[Group2] = [ Mode_switch ]
-//	};
+	key <COMP> {
+		type[Group1] = "ONE_LEVEL",
+		symbols[Group1] = [ Mode_switch ],
+		type[Group2] = "ONE_LEVEL",
+		symbols[Group2] = [ Mode_switch ]
+	};
+	key <FK13> {
+		type[Group1] = "ONE_LEVEL",
+		symbols[Group1] = [ Mode_switch ],
+		type[Group2] = "ONE_LEVEL",
+		symbols[Group2] = [ Mode_switch ]
+	};
 
 
 	// Space key
